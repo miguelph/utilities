@@ -13,7 +13,7 @@ fi
 USR=$(whoami)
 DRY_RUN="false"
 TARGET_DIR="$(pwd)"
-GERRIT_SERVER="${ENV_GERRIT_SERVER}|-gerrit.acme.com"
+GERRIT_SERVER="${ENV_GERRIT_SERVER:-gerrit.acme.com}"
 
 function print_usage {
 cat << _EOF
